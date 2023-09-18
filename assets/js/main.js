@@ -16,3 +16,48 @@ AOS.init({
 
 });
 
+
+document.querySelector('form').addEventListener('submit', function(e) {
+  e.preventDefault(); // Prevent the form from submitting the traditional way
+
+  let formData = new FormData(this);
+
+  fetch('https://formspree.io/f/maygbzaa', {
+      method: 'POST',
+      body: formData
+  })
+  .then(response => response.json())
+  .then(data => {
+      if (data.ok) {
+          // Show the notification
+          let notification = document.getElementById('notification');
+          notification.style.display = 'block';
+
+          // Hide the notification after 2 seconds
+          setTimeout(() => {
+              notification.style.display = 'none';
+          }, 2000);
+      } else {
+          alert('Error sending message. Please try again. or email: rsomisetty@gmail.com');
+      }
+  })
+
+  // Show the notification
+  let notification = document.getElementById('notification');
+  notification.style.display = 'block';
+
+  // Hide the notification after 2 seconds
+  setTimeout(() => {
+      notification.style.display = 'none';
+  }, 2000);
+});
+
+function showNotification() {
+  let notification = document.getElementById('notification');
+  notification.classList.add('show');
+
+  setTimeout(() => {
+      notification.classList.remove('show');
+  }, 4000);
+}
+

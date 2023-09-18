@@ -47,18 +47,22 @@
             <div class="container">
                 <div class="row">
                     <div class="profile-text col-lg-6">
-                        <h2 data-aos="fade-up">
+                        <h2 data-aos="fade-up" data-aos-delay="300">
                             I'M
                             <span class="text-brand display-4 fw-bold">Rohan Somisetty</span>
                         </h2>
-                        <p data-aos="fade-up" data-aos-delay="300">
+                        <p data-aos="fade-up" data-aos-delay="400">
                             Experienced software developer with a deep passion for innovation and a fervent enthusiasm
                             for data science exploration
                         </p>
-                        <a data-aos="fade-up" data-aos-delay="400" href="#work" class="btn btn-brand viewresume">View
+                        <div class="flex-row">
+                        <a data-aos="fade-up" data-aos-delay="500" href="https://drive.google.com/file/d/1elKDx0EFBeLhbqIB31dNZmPjjRxP6Mjq/view?usp=sharing" class="btn btn-brand viewresume">View
                             Resume</a>
+                        <a data-aos="fade-up" data-aos-delay="500" href="https://drive.google.com/uc?export=download&id=1elKDx0EFBeLhbqIB31dNZmPjjRxP6Mjq" class="btn btn-brand download">Download
+                            Resume</a>
+                        </div>
                     </div>
-                    <div class="profile col-lg-4">
+                    <div class="profile col-lg-4" data-aos="fade-up" data-aos-delay="300">
                         <img class="rounded-5" src="./assets/images/IMG_0985.JPG" alt="rohan picture">
                     </div>
                 </div>
@@ -68,11 +72,11 @@
     </div>
     <!-- /content wrapper -->
     <!-- About -->
-    <section id="about"></section>
+    <section id="about">
     <div class="container  full-height">
         <div class="row">
             <h1> Who Am I</h1>
-            <div class="m-4">
+            <div class="m-4" data-aos="fade-up" data-aos-delay="300">
                 <p>
                     Hey! I'm a code junkie deeply into software development with a special love for Data Science. I've
                     been messing around with codes and algorithms for a while now, and I'm all about turning that
@@ -81,7 +85,7 @@
             </div>
         </div>
         <div class="row gx-5">
-            <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="300">
+            <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="400">
                 <div class=" p-3 bg-base rounded-4 shadow-effect">
 
                     <h4><i class="las la-university "></i> Education</h4>
@@ -125,17 +129,18 @@
             </div>
         </div>
     </div>
+    </section>
     <!-- /About -->
     <!-- Skills -->
     <section id="skills">
         <div class="container full-height">
-            <div class="row pb-4" data-aos="fade-up">
+            <div class="row pb-4" data-aos="fade-up" data-aos-delay="300">
                 <div class="col-md-8">
                     <h6 class="text-brand">SKILLS</h6>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
                     <div class=" p-3 bg-base rounded-4 shadow-effect">
                         <h4 class="mb-4">FRONT END TECHNOLOGIES</h4>
                         <h6>HTML</h6>
@@ -170,7 +175,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="500">
                     <div class=" p-3 bg-base rounded-4 shadow-effect">
                         <h4 class="mb-4">BACK END TECHNOLOGIES</h4>
                         <h6>Java</h6>
@@ -227,7 +232,7 @@
                     </div>
 
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="600">
                     <div class=" p-3 bg-base rounded-4 shadow-effect">
                         <h4 class="mb-4">DATA SCIENCE AND TOOLS</h4>
                         <h6>Python</h6>
@@ -404,13 +409,13 @@
     <section id="blog" class="full-height">
         <div class="container">
             <div class="row pb-4">
-                <div class="col-lg-8">
+                <div class="col-lg-8"data-aos="fade-up" data-aos-delay="300" >
                     <h6 class="text-brand"> BLOG</h6>
                     <h1> My Recent Blogs</h1>
                 </div>
             </div>
             <div class="row pb-7 ">
-                <div class="col">
+                <div class="col" data-aos="fade-up" data-aos-duration="3000">
                     <h1 style="color: aqua; text-align: center;"> Stay tuned! My insightful blogs are on the horizon
                     </h1>
                 </div>
@@ -465,6 +470,7 @@
     <!-- /Blog -->
 
     <!-- Contact -->
+    
     <section id="contact" class="full-height">
         <div class="container">
             <div class="row justify-content-center text-center pb-4">
@@ -473,23 +479,28 @@
                     <h1>Intrested in Working Together? Lets Talk</h1>
                 </div>
                 <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
-                    <form action="#" class="row g-lg-3 gy-3">
+                    <form id="contactForm" action="https://formspree.io/f/maygbzaa" method="POST" class="row g-lg-3 gy-3">
                         <div class="form-group col-md-4">
-                            <input type="text" class="form-control" placeholder="Enter Your Name" required>
+                            <input type="text" id="name" class="form-control" placeholder="Enter Your Name *" required>
                         </div>
                         <div class="form-group col-md-4">
-                            <input type="text" class="form-control" placeholder="Enter Your Email" required>
+                            <input type="email" name="email" class="form-control" placeholder="Enter Your Email *" required>
                         </div>
                         <div class="form-group col-md-8">
-                            <input type="text" class="form-control" placeholder="Subject" required>
+                            <input type="text" name="subject" class="form-control" placeholder="Subject *" required>
                         </div>
                         <div class="form-group col-md-8">
-                            <textarea name="" rows="7" class="form-control" placeholder="Message" required></textarea>
+                            <textarea name="" rows="7" name="message" class="form-control" placeholder="Message *" required></textarea>
                         </div>
                         <div class="form-group col-md-8 d-grid">
-                            <button type="submit" class="btn btn-brand" style="border-radius: 10px;"> Send</button>
+                            <button type="submit" onclick= "showNotification()"  class="btn btn-brand" style="border-radius: 10px;"> Send</button>
+                        </div>
+                        <div id="notification" class="notification" style="display:none; z-index: 1000; opacity: 0.7;">
+                            Message sent!
                         </div>
                     </form>
+
+
                 </div>
                 <div class="col-lg-3" data-aos="fade-up" data-aos-delay="500">
                     <div class="connect pt-5 pb-4 justify-content-center">
@@ -544,6 +555,10 @@
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/aos.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    
 </body>
 
 </html>
