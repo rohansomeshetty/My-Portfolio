@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
+
+:root{
+    --color-body: #ddd9d9;
+    --color-heading: #EEEEEE;
+    --color-base: #393E46;
+    --color-base2: rgb(34, 40, 49);
+    --color-brand: #00ADB5;
+    --color-brand2: #BBBFCA;
+    --sidebar-width: 280px;
+    --font-base: "Bai Jamjuree";
+}
+.profile-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.viewresume{
+    width: 180px;
+}
+.profile img {
+    margin: 100px;
+}
+.skill-bar{
+    height: 0.3rem;
+    background-color: var(--color-brand);
+}
+
+body{
+    background-color: var(--color-base2);
+    color: var(--color-body);
+    font-family: var(--font-base), sans-serif;
+}
+.cas{
+    height: 200px;
+    width: 800px;
+    min-height: 50vh;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: var(--color-heading);
+    font-weight: 700;
+
+}
+.text-light_{
+    color: var(--color-heading);
+}
+a{
+    text-decoration: none;
+    color: var(--color-body);
+    transition: all 0.4s ease;
+}
+
+a:hover{
+    color: var(--color-brand);
+}
+img{
+    width: 100%;
+}
+.text-brand{
+    color: var(--color-brand);
+}
+
+.navbar .nav-link{
+    font-weight: 700;
+    
+}
+.navbar .nav-link.active{
+    color: var(--color-brand);
+}
+.navbar{
+    background: linear-gradient(rgba(34, 40, 49 0.95),rgba(34, 40, 49 0.95)),url("../images/forest-868715_1280.jpg");
+}
+.full-height{
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 2px solid rgb(255,255,255,0.1);
+}
+.btn{
+    padding: 12px 28px;
+    font-weight: 700;
+}
+.btn-brand{
+    background-color: var(--color-brand);
+    border-color: var(--color-brand);
+    border-radius: 30px;
+}
+.btn-brand-project{
+    font-weight: 500;
+    /* padding: 0;
+    height: 30px;
+    width: 100px; */
+    float: right;
+}
+
+.rs-icon {
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    background-color: #555;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.btn-brand:hover,
+.btn-brand:focus{
+    background-color: white;
+    color: var(--color-base);
+    border-color: var(--color-brand2);
+}
+.bg-base{
+    background-color: var(--color-base);
+}
+.shadow-effect {
+    transition: all 0.5s;
+}
+
+.shadow-effect:hover {
+    box-shadow: -6px 6px 0 0 var(--color-brand);
+}
+.iconbox{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    background-color: var(--color-brand);
+    color: var(--color-base);
+}
+/* navbar */
+@media(min-width: 992px){
+    .navbar{
+        /* min-height: 100vh;
+        width: var(--sidebar-width); */
+        background: linear-gradient(rgba(34, 40, 49 0.95),rgba(34, 40, 49 0.95)),url("../images/forest-868715_1280.jpg");
+        background-size: cover;
+        /* background-position: center; */
+        
+    }
+    .navbar-brand img{
+        border: 8px solid var(--color-brand);
+
+    }
+    /* #projects .container{
+        padding-left: var(--sidebar-width);
+    }
+    #content-wrapper{
+        padding-left: var(--sidebar-width);
+    } */
+    
+}
+
+/* Projects */
+.card-custom .card-custom-image {
+    display: flex;
+    align-items:center;
+    justify-content:space-around;
+    overflow: hidden;
+}
+
+.card-custom .card-custom-image img {
+    height: 30vh;
+    transition: all 0.4s ease;
+}
+
+.card-custom:hover .card-custom-image img {
+    transform: scale(1.1);
+}
+
+/* /Projects */
+
+/* contact */
+
+#contact .form-control{
+    background-color: var(--color-base);
+    border-color: var(--color-base);
+    color: var(--color-body);
+}
+#contact .form-control:focus{
+    border-color: var(--color-brand);
+    box-shadow: none;
+}
+#contact .form-control::placeholder{
+    color: var(--color-body);
+}
+/* /contact */
+.socail-icons{
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-base);
+    border-radius: 100px;
+}
