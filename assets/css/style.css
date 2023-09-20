@@ -10,16 +10,25 @@
     --sidebar-width: 280px;
     --font-base: "Bai Jamjuree";
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
 .profile-text{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /* align-items: center; */
 }
 .viewresume{
     width: 180px;
 }
 .profile img {
-    margin: 100px;
+    margin-top: 100px;
+    align-items: center;
+    width: 400px;
+    height: 400px;
 }
 .skill-bar{
     height: 0.3rem;
@@ -69,7 +78,7 @@ img{
     color: var(--color-brand);
 }
 .navbar{
-    background: linear-gradient(rgba(34, 40, 49 0.95),rgba(34, 40, 49 0.95)),url("../images/forest-868715_1280.jpg");
+    background: linear-gradient(rgba(34, 40, 49 0.9),rgba(34, 40, 49 0.9)),url("../images/forest-868715_1280.jpg");
 }
 .full-height{
     min-height: 100vh;
@@ -157,7 +166,8 @@ img{
     .navbar{
         /* min-height: 100vh;
         width: var(--sidebar-width); */
-        background: linear-gradient(rgba(34, 40, 49 0.95),rgba(34, 40, 49 0.95)),url("../images/forest-868715_1280.jpg");
+        /* background: linear-gradient(rgba(34, 40, 49 0.95),rgba(34, 40, 49 0.95)),url("../images/forest-868715_1280.jpg"); */
+        background-color: var(--color-base);
         background-size: cover;
         /* background-position: center; */
         

@@ -16,6 +16,32 @@ AOS.init({
 
 });
 
+$(document).ready(function(){
+  $(".navbar .nav-link").on('click', function(event) {
+
+      if (this.hash !== "") {
+
+          event.preventDefault();
+
+          var hash = this.hash;
+
+          $('html, body').animate({
+              scrollTop: $(hash).offset().top
+          }, 800, function(){
+              window.location.hash = hash;
+          });
+      } 
+  });
+});
+
+
+
+
+
+
+
+
+
 
 document.querySelector('form').addEventListener('submit', function(e) {
   e.preventDefault(); // Prevent the form from submitting the traditional way
@@ -60,4 +86,8 @@ function showNotification() {
       notification.classList.remove('show');
   }, 4000);
 }
+
+// -------------------
+
+// Select all links with hashes
 
